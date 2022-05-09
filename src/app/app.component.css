@@ -1,0 +1,9 @@
+h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 1rem;
+    padding: .5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    margin-inline: auto;
+}

@@ -1,0 +1,31 @@
+<div class="container" *ngIf="product">
+
+    <h2>{{product.title | uppercase}}:</h2>
+
+    <div>
+
+        <ul>
+            <li>
+                <label for="product-name">Nome do produto:</label>
+                <input id="product-name" [(ngModel)]="product.title" placeholder="Nome">
+            </li>
+            <li>
+                <label for="product-id">ID do produto:</label>
+                <input id="product-id" [(ngModel)]="product.id" placeholder="ID">
+            </li>
+            <li>
+                <label for="product-brand">Marca do produto:</label>
+                <input id="product-brand" [(ngModel)]="product.brand" placeholder="Marc">
+            </li>
+            <li>
+                <label for="product-price">Preço do produto:</label>
+                <input id="product-price" [(ngModel)]="product.price" placeholder="Preço">
+            </li>
+            <li>
+                <label for="product-quantity">Quantidade em estoque:</label>
+                <input id="product-quantity" [(ngModel)]="product.quantity" placeholder="Quantidade">
+            </li>
+        </ul>
+    </div>
+
+</div>

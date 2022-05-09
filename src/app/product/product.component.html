@@ -1,7 +1,13 @@
-<h2>{{product.name}}</h2>
-<ul>
-    <li>ID: {{product.id}}</li>
-    <li>MARCA: {{product.brand}}</li>
-    <li>PREÇO: R${{product.price}}</li>
-    <li>QUANTIDADE: {{product.quantity}}</li>
-</ul>
+<div class="container">
+    <ul>
+        <li *ngFor="let product of products">
+            <p><strong>{{product.id}}</strong>. {{product.title}}</p>
+            <button [class.selected]="product === selectedProduct" type="button" (click)="onSelect(product)">
+            <span class="material-symbols-outlined">settings</span>
+        </button>
+        </li>
+    </ul>
+
+</div>
+    
+<app-product-details [product]="selectedProduct"></app-product-details>

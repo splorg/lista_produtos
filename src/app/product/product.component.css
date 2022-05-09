@@ -1,0 +1,43 @@
+.container {
+    background-color: white;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 1.6rem 3rem;
+    border-radius: 1rem;
+    margin-block: 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.container ul li {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.container ul li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    border-radius: .5rem;
+    padding: .2rem;
+    transition: background 200ms;
+}
+
+.container ul li button:hover {
+    cursor: pointer;
+    background-color: hsl(225, 56%, 40%);
+}
