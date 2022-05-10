@@ -2,7 +2,7 @@
     <ul>
         <li *ngFor="let product of products">
             <p><strong>{{product.id}}</strong>. {{product.title}}</p>
-            <button [class.selected]="product === selectedProduct" type="button" (click)="onSelect(product)">
+            <button type="button" (click)="onSelect(product)">
             <span class="material-symbols-outlined">settings</span>
         </button>
         </li>

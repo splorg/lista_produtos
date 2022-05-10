@@ -36,3 +36,19 @@
     font-family: 'Poppins', sans-serif;
     border-color: rgba(0, 0, 0, 0.4);
 }
+
+.container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    border-radius: .5rem;
+    padding: .2rem;
+    transition: background 200ms;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background-color: hsl(225, 56%, 40%);
+}

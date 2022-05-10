@@ -15,6 +15,8 @@ export class ProductComponent implements OnInit {
 
   selectedProduct?: Product
 
+  showDetails = false
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,6 +25,5 @@ export class ProductComponent implements OnInit {
   onSelect(product: Product) {
     this.selectedProduct = product
   }
-
 
 }
